@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserNotesTableViewCell" rowHeight="153" id="KGk-i7-Jjw" customClass="UserNotesTableViewCell" customModule="TawkUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHm-sr-PdJ">
+                        <rect key="frame" x="5" y="0.0" width="310" height="153"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltV-yS-IsN">
+                                <rect key="frame" x="0.0" y="8" width="47" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GG5-MU-3Va">
+                                <rect key="frame" x="-2" y="27" width="312" height="74"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="71" id="7y8-vv-iza"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="cQf-fz-90k"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBQ-WK-M7H">
+                                <rect key="frame" x="122.5" y="115" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="1LR-9r-xts"/>
+                                    <constraint firstAttribute="height" constant="30" id="hXS-ja-QeW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickedSaveNoteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9XF-YR-G3h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NBQ-WK-M7H" firstAttribute="centerX" secondItem="jHm-sr-PdJ" secondAttribute="centerX" id="50b-Es-WpI"/>
+                            <constraint firstAttribute="bottom" secondItem="NBQ-WK-M7H" secondAttribute="bottom" constant="8" id="6yl-A5-sYh"/>
+                            <constraint firstAttribute="trailing" secondItem="GG5-MU-3Va" secondAttribute="trailing" id="KUh-z7-XCb"/>
+                            <constraint firstItem="GG5-MU-3Va" firstAttribute="leading" secondItem="jHm-sr-PdJ" secondAttribute="leading" constant="-2" id="U38-RY-6nT"/>
+                            <constraint firstItem="GG5-MU-3Va" firstAttribute="top" secondItem="ltV-yS-IsN" secondAttribute="bottom" constant="1" id="tms-WX-y7e"/>
+                            <constraint firstItem="ltV-yS-IsN" firstAttribute="leading" secondItem="jHm-sr-PdJ" secondAttribute="leading" id="u6Z-Vl-eJv"/>
+                            <constraint firstItem="NBQ-WK-M7H" firstAttribute="top" secondItem="GG5-MU-3Va" secondAttribute="bottom" constant="14" id="vvV-I5-FQ5"/>
+                            <constraint firstItem="ltV-yS-IsN" firstAttribute="top" secondItem="jHm-sr-PdJ" secondAttribute="top" constant="8" id="yOO-Co-AdS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jHm-sr-PdJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="2gD-zs-hGK"/>
+                    <constraint firstAttribute="bottom" secondItem="jHm-sr-PdJ" secondAttribute="bottom" id="8PJ-e7-Nin"/>
+                    <constraint firstItem="jHm-sr-PdJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JEV-4y-ccM"/>
+                    <constraint firstAttribute="trailing" secondItem="jHm-sr-PdJ" secondAttribute="trailing" constant="5" id="sH0-jP-bt4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="noteTextView" destination="GG5-MU-3Va" id="irs-eR-aGr"/>
+                <outlet property="saveButton" destination="NBQ-WK-M7H" id="6Ls-FY-9fM"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="103.45982142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

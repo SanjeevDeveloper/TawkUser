@@ -7,28 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45535A7027D1E5D000207CA0 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45535A6F27D1E5D000207CA0 /* UIImageViewExtension.swift */; };
+		45535A7827D2074700207CA0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45535A7727D2074700207CA0 /* UIViewControllerExtension.swift */; };
+		45535A8927D23D7C00207CA0 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45535A8827D23D7C00207CA0 /* NetworkStatus.swift */; };
+		45535A9127D2579E00207CA0 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45535A9027D2579E00207CA0 /* CoreDataStorage.swift */; };
+		45535AB927D279BD00207CA0 /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45535AB527D279BD00207CA0 /* Profile+CoreDataClass.swift */; };
+		45535ABA27D279BD00207CA0 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45535AB627D279BD00207CA0 /* Profile+CoreDataProperties.swift */; };
+		45535ABB27D279BD00207CA0 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45535AB727D279BD00207CA0 /* User+CoreDataClass.swift */; };
+		45535ABC27D279BD00207CA0 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45535AB827D279BD00207CA0 /* User+CoreDataProperties.swift */; };
+		4574BA0327D2A4B9005B708B /* TawkUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574BA0227D2A4B9005B708B /* TawkUserTests.swift */; };
+		4574BA0D27D2A500005B708B /* TawkUserServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574BA0C27D2A500005B708B /* TawkUserServiceTests.swift */; };
+		45AFDB8C27D311AE00B1497B /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AFDB8B27D311AE00B1497B /* UITableViewExtension.swift */; };
+		45AFDB9627D3417600B1497B /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AFDB9527D3417600B1497B /* ListCellViewModel.swift */; };
+		45AFDB9A27D354AD00B1497B /* UserListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AFDB9927D354AD00B1497B /* UserListTests.swift */; };
+		45AFDB9E27D354BB00B1497B /* UserDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AFDB9D27D354BB00B1497B /* UserDetailsTests.swift */; };
 		45D6A56427CF4FCB0007911C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A56327CF4FCB0007911C /* AppDelegate.swift */; };
 		45D6A56627CF4FCB0007911C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A56527CF4FCB0007911C /* SceneDelegate.swift */; };
-		45D6A56827CF4FCB0007911C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A56727CF4FCB0007911C /* ViewController.swift */; };
 		45D6A56B27CF4FCB0007911C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D6A56927CF4FCB0007911C /* Main.storyboard */; };
 		45D6A56E27CF4FCB0007911C /* TawkUser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A56C27CF4FCB0007911C /* TawkUser.xcdatamodeld */; };
 		45D6A57027CF4FCC0007911C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D6A56F27CF4FCC0007911C /* Assets.xcassets */; };
 		45D6A57327CF4FCC0007911C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D6A57127CF4FCC0007911C /* LaunchScreen.storyboard */; };
+		45D6A58427CF53190007911C /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A58327CF53190007911C /* UserListTableViewController.swift */; };
+		45D6A59127CF559B0007911C /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A59027CF559B0007911C /* ProfileTableViewController.swift */; };
+		45D6A59827CF576B0007911C /* AvatarHederImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A59627CF576B0007911C /* AvatarHederImageTableViewCell.swift */; };
+		45D6A59927CF576B0007911C /* AvatarHederImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45D6A59727CF576B0007911C /* AvatarHederImageTableViewCell.xib */; };
+		45D6A59D27CF57950007911C /* UserDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A59B27CF57950007911C /* UserDetailsTableViewCell.swift */; };
+		45D6A59E27CF57950007911C /* UserDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45D6A59C27CF57950007911C /* UserDetailsTableViewCell.xib */; };
+		45D6A5A227CF57AC0007911C /* UserNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5A027CF57AC0007911C /* UserNotesTableViewCell.swift */; };
+		45D6A5A327CF57AC0007911C /* UserNotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45D6A5A127CF57AC0007911C /* UserNotesTableViewCell.xib */; };
+		45D6A5A727CF66FE0007911C /* NormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5A627CF66FE0007911C /* NormalTableViewCell.swift */; };
+		45D6A5AA27CF670A0007911C /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5A927CF670A0007911C /* NoteTableViewCell.swift */; };
+		45D6A5AD27CF67160007911C /* InvertedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5AC27CF67160007911C /* InvertedTableViewCell.swift */; };
+		45D6A5BC27CF84E80007911C /* APISniper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5BB27CF84E80007911C /* APISniper.swift */; };
+		45D6A5C927CF88950007911C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5C827CF88950007911C /* Constants.swift */; };
+		45D6A5D327CF8DC70007911C /* NetworkReachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5D227CF8DC70007911C /* NetworkReachable.swift */; };
+		45D6A5DE27CF903A0007911C /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5DD27CF903A0007911C /* UserListViewModel.swift */; };
+		45D6A5F027D1BC0E0007911C /* UsersListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5EF27D1BC0E0007911C /* UsersListModel.swift */; };
+		45D6A5F427D1C1E70007911C /* UserProfileDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5F327D1C1E70007911C /* UserProfileDetailsModel.swift */; };
+		45D6A5F727D1C8B60007911C /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6A5F627D1C8B60007911C /* UserProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4574BA0527D2A4B9005B708B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45D6A55827CF4FCA0007911C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45D6A55F27CF4FCB0007911C;
+			remoteInfo = TawkUser;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		45535A6F27D1E5D000207CA0 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		45535A7727D2074700207CA0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		45535A8827D23D7C00207CA0 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		45535A9027D2579E00207CA0 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		45535AB527D279BD00207CA0 /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataClass.swift"; sourceTree = "<group>"; };
+		45535AB627D279BD00207CA0 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		45535AB727D279BD00207CA0 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		45535AB827D279BD00207CA0 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4574BA0027D2A4B9005B708B /* TawkUserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TawkUserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4574BA0227D2A4B9005B708B /* TawkUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TawkUserTests.swift; sourceTree = "<group>"; };
+		4574BA0427D2A4B9005B708B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4574BA0C27D2A500005B708B /* TawkUserServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TawkUserServiceTests.swift; sourceTree = "<group>"; };
+		45AFDB8B27D311AE00B1497B /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		45AFDB9527D3417600B1497B /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
+		45AFDB9927D354AD00B1497B /* UserListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTests.swift; sourceTree = "<group>"; };
+		45AFDB9D27D354BB00B1497B /* UserDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTests.swift; sourceTree = "<group>"; };
 		45D6A56027CF4FCB0007911C /* TawkUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TawkUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D6A56327CF4FCB0007911C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45D6A56527CF4FCB0007911C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45D6A56727CF4FCB0007911C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45D6A56A27CF4FCB0007911C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45D6A56D27CF4FCB0007911C /* TawkUser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TawkUser.xcdatamodel; sourceTree = "<group>"; };
 		45D6A56F27CF4FCC0007911C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45D6A57227CF4FCC0007911C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45D6A57427CF4FCC0007911C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D6A58327CF53190007911C /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
+		45D6A59027CF559B0007911C /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		45D6A59627CF576B0007911C /* AvatarHederImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarHederImageTableViewCell.swift; sourceTree = "<group>"; };
+		45D6A59727CF576B0007911C /* AvatarHederImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarHederImageTableViewCell.xib; sourceTree = "<group>"; };
+		45D6A59B27CF57950007911C /* UserDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		45D6A59C27CF57950007911C /* UserDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		45D6A5A027CF57AC0007911C /* UserNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotesTableViewCell.swift; sourceTree = "<group>"; };
+		45D6A5A127CF57AC0007911C /* UserNotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNotesTableViewCell.xib; sourceTree = "<group>"; };
+		45D6A5A627CF66FE0007911C /* NormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTableViewCell.swift; sourceTree = "<group>"; };
+		45D6A5A927CF670A0007911C /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		45D6A5AC27CF67160007911C /* InvertedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedTableViewCell.swift; sourceTree = "<group>"; };
+		45D6A5BB27CF84E80007911C /* APISniper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISniper.swift; sourceTree = "<group>"; };
+		45D6A5C827CF88950007911C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		45D6A5D227CF8DC70007911C /* NetworkReachable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachable.swift; sourceTree = "<group>"; };
+		45D6A5DD27CF903A0007911C /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		45D6A5EF27D1BC0E0007911C /* UsersListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListModel.swift; sourceTree = "<group>"; };
+		45D6A5F327D1C1E70007911C /* UserProfileDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDetailsModel.swift; sourceTree = "<group>"; };
+		45D6A5F627D1C8B60007911C /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4574B9FD27D2A4B9005B708B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45D6A55D27CF4FCB0007911C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +120,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4574BA0127D2A4B9005B708B /* TawkUserTests */ = {
+			isa = PBXGroup;
+			children = (
+				4574BA0227D2A4B9005B708B /* TawkUserTests.swift */,
+				4574BA0C27D2A500005B708B /* TawkUserServiceTests.swift */,
+				45AFDB9927D354AD00B1497B /* UserListTests.swift */,
+				45AFDB9D27D354BB00B1497B /* UserDetailsTests.swift */,
+				4574BA0427D2A4B9005B708B /* Info.plist */,
+			);
+			path = TawkUserTests;
+			sourceTree = "<group>";
+		};
 		45D6A55727CF4FCA0007911C = {
 			isa = PBXGroup;
 			children = (
 				45D6A56227CF4FCB0007911C /* TawkUser */,
+				4574BA0127D2A4B9005B708B /* TawkUserTests */,
 				45D6A56127CF4FCB0007911C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				45D6A56027CF4FCB0007911C /* TawkUser.app */,
+				4574BA0027D2A4B9005B708B /* TawkUserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,7 +155,12 @@
 			children = (
 				45D6A56327CF4FCB0007911C /* AppDelegate.swift */,
 				45D6A56527CF4FCB0007911C /* SceneDelegate.swift */,
-				45D6A56727CF4FCB0007911C /* ViewController.swift */,
+				45D6A5C727CF888A0007911C /* Utility */,
+				45D6A5BA27CF84DE0007911C /* Service */,
+				45D6A5D527CF8F570007911C /* DataManager */,
+				45D6A58F27CF55220007911C /* CoreDataModels */,
+				45D6A57F27CF52EC0007911C /* UserList */,
+				45D6A57B27CF52EC0007911C /* Profile */,
 				45D6A56927CF4FCB0007911C /* Main.storyboard */,
 				45D6A56F27CF4FCC0007911C /* Assets.xcassets */,
 				45D6A57127CF4FCC0007911C /* LaunchScreen.storyboard */,
@@ -70,9 +170,161 @@
 			path = TawkUser;
 			sourceTree = "<group>";
 		};
+		45D6A57B27CF52EC0007911C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A57C27CF52EC0007911C /* ViewModel */,
+				45D6A57D27CF52EC0007911C /* Model */,
+				45D6A57E27CF52EC0007911C /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		45D6A57C27CF52EC0007911C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A5F627D1C8B60007911C /* UserProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45D6A57D27CF52EC0007911C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A5F327D1C1E70007911C /* UserProfileDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45D6A57E27CF52EC0007911C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A59027CF559B0007911C /* ProfileTableViewController.swift */,
+				45D6A59527CF55C30007911C /* TableCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45D6A57F27CF52EC0007911C /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A58027CF52EC0007911C /* ViewModel */,
+				45D6A58127CF52EC0007911C /* Model */,
+				45D6A58227CF52EC0007911C /* View */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		45D6A58027CF52EC0007911C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A5DD27CF903A0007911C /* UserListViewModel.swift */,
+				45AFDB9527D3417600B1497B /* ListCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45D6A58127CF52EC0007911C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A5EF27D1BC0E0007911C /* UsersListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45D6A58227CF52EC0007911C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A58327CF53190007911C /* UserListTableViewController.swift */,
+				45D6A59427CF55B70007911C /* TableCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45D6A58F27CF55220007911C /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				45535AB527D279BD00207CA0 /* Profile+CoreDataClass.swift */,
+				45535AB627D279BD00207CA0 /* Profile+CoreDataProperties.swift */,
+				45535AB727D279BD00207CA0 /* User+CoreDataClass.swift */,
+				45535AB827D279BD00207CA0 /* User+CoreDataProperties.swift */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		45D6A59427CF55B70007911C /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A5A627CF66FE0007911C /* NormalTableViewCell.swift */,
+				45D6A5A927CF670A0007911C /* NoteTableViewCell.swift */,
+				45D6A5AC27CF67160007911C /* InvertedTableViewCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		45D6A59527CF55C30007911C /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A59627CF576B0007911C /* AvatarHederImageTableViewCell.swift */,
+				45D6A59727CF576B0007911C /* AvatarHederImageTableViewCell.xib */,
+				45D6A59B27CF57950007911C /* UserDetailsTableViewCell.swift */,
+				45D6A59C27CF57950007911C /* UserDetailsTableViewCell.xib */,
+				45D6A5A027CF57AC0007911C /* UserNotesTableViewCell.swift */,
+				45D6A5A127CF57AC0007911C /* UserNotesTableViewCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		45D6A5BA27CF84DE0007911C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A5BB27CF84E80007911C /* APISniper.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		45D6A5C727CF888A0007911C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				45D6A5C827CF88950007911C /* Constants.swift */,
+				45535A6F27D1E5D000207CA0 /* UIImageViewExtension.swift */,
+				45D6A5D227CF8DC70007911C /* NetworkReachable.swift */,
+				45535A7727D2074700207CA0 /* UIViewControllerExtension.swift */,
+				45535A8827D23D7C00207CA0 /* NetworkStatus.swift */,
+				45AFDB8B27D311AE00B1497B /* UITableViewExtension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		45D6A5D527CF8F570007911C /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				45535A9027D2579E00207CA0 /* CoreDataStorage.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4574B9FF27D2A4B9005B708B /* TawkUserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4574BA0727D2A4B9005B708B /* Build configuration list for PBXNativeTarget "TawkUserTests" */;
+			buildPhases = (
+				4574B9FC27D2A4B9005B708B /* Sources */,
+				4574B9FD27D2A4B9005B708B /* Frameworks */,
+				4574B9FE27D2A4B9005B708B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4574BA0627D2A4B9005B708B /* PBXTargetDependency */,
+			);
+			name = TawkUserTests;
+			productName = TawkUserTests;
+			productReference = 4574BA0027D2A4B9005B708B /* TawkUserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		45D6A55F27CF4FCB0007911C /* TawkUser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45D6A57727CF4FCC0007911C /* Build configuration list for PBXNativeTarget "TawkUser" */;
@@ -99,6 +351,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					4574B9FF27D2A4B9005B708B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 45D6A55F27CF4FCB0007911C;
+					};
 					45D6A55F27CF4FCB0007911C = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -118,16 +374,27 @@
 			projectRoot = "";
 			targets = (
 				45D6A55F27CF4FCB0007911C /* TawkUser */,
+				4574B9FF27D2A4B9005B708B /* TawkUserTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4574B9FE27D2A4B9005B708B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45D6A55E27CF4FCB0007911C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D6A5A327CF57AC0007911C /* UserNotesTableViewCell.xib in Resources */,
+				45D6A59E27CF57950007911C /* UserDetailsTableViewCell.xib in Resources */,
 				45D6A57327CF4FCC0007911C /* LaunchScreen.storyboard in Resources */,
+				45D6A59927CF576B0007911C /* AvatarHederImageTableViewCell.xib in Resources */,
 				45D6A57027CF4FCC0007911C /* Assets.xcassets in Resources */,
 				45D6A56B27CF4FCB0007911C /* Main.storyboard in Resources */,
 			);
@@ -136,18 +403,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4574B9FC27D2A4B9005B708B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AFDB9A27D354AD00B1497B /* UserListTests.swift in Sources */,
+				45AFDB9E27D354BB00B1497B /* UserDetailsTests.swift in Sources */,
+				4574BA0327D2A4B9005B708B /* TawkUserTests.swift in Sources */,
+				4574BA0D27D2A500005B708B /* TawkUserServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45D6A55C27CF4FCB0007911C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D6A56827CF4FCB0007911C /* ViewController.swift in Sources */,
+				45535A7027D1E5D000207CA0 /* UIImageViewExtension.swift in Sources */,
+				45D6A59D27CF57950007911C /* UserDetailsTableViewCell.swift in Sources */,
+				45535ABA27D279BD00207CA0 /* Profile+CoreDataProperties.swift in Sources */,
+				45535A7827D2074700207CA0 /* UIViewControllerExtension.swift in Sources */,
+				45535A9127D2579E00207CA0 /* CoreDataStorage.swift in Sources */,
+				45D6A5F427D1C1E70007911C /* UserProfileDetailsModel.swift in Sources */,
+				45AFDB8C27D311AE00B1497B /* UITableViewExtension.swift in Sources */,
+				45D6A5DE27CF903A0007911C /* UserListViewModel.swift in Sources */,
 				45D6A56427CF4FCB0007911C /* AppDelegate.swift in Sources */,
+				45D6A58427CF53190007911C /* UserListTableViewController.swift in Sources */,
+				45535A8927D23D7C00207CA0 /* NetworkStatus.swift in Sources */,
 				45D6A56627CF4FCB0007911C /* SceneDelegate.swift in Sources */,
+				45D6A5BC27CF84E80007911C /* APISniper.swift in Sources */,
+				45D6A59127CF559B0007911C /* ProfileTableViewController.swift in Sources */,
+				45AFDB9627D3417600B1497B /* ListCellViewModel.swift in Sources */,
+				45D6A5AA27CF670A0007911C /* NoteTableViewCell.swift in Sources */,
+				45D6A5F027D1BC0E0007911C /* UsersListModel.swift in Sources */,
+				45D6A5AD27CF67160007911C /* InvertedTableViewCell.swift in Sources */,
+				45535ABB27D279BD00207CA0 /* User+CoreDataClass.swift in Sources */,
+				45535ABC27D279BD00207CA0 /* User+CoreDataProperties.swift in Sources */,
 				45D6A56E27CF4FCB0007911C /* TawkUser.xcdatamodeld in Sources */,
+				45D6A5F727D1C8B60007911C /* UserProfileViewModel.swift in Sources */,
+				45D6A5D327CF8DC70007911C /* NetworkReachable.swift in Sources */,
+				45535AB927D279BD00207CA0 /* Profile+CoreDataClass.swift in Sources */,
+				45D6A5A727CF66FE0007911C /* NormalTableViewCell.swift in Sources */,
+				45D6A59827CF576B0007911C /* AvatarHederImageTableViewCell.swift in Sources */,
+				45D6A5A227CF57AC0007911C /* UserNotesTableViewCell.swift in Sources */,
+				45D6A5C927CF88950007911C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4574BA0627D2A4B9005B708B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45D6A55F27CF4FCB0007911C /* TawkUser */;
+			targetProxy = 4574BA0527D2A4B9005B708B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		45D6A56927CF4FCB0007911C /* Main.storyboard */ = {
@@ -169,6 +479,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4574BA0827D2A4B9005B708B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TawkUserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanjeev.TawkUserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TawkUser.app/TawkUser";
+			};
+			name = Debug;
+		};
+		4574BA0927D2A4B9005B708B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TawkUserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanjeev.TawkUserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TawkUser.app/TawkUser";
+			};
+			name = Release;
+		};
 		45D6A57527CF4FCC0007911C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,6 +672,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4574BA0727D2A4B9005B708B /* Build configuration list for PBXNativeTarget "TawkUserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4574BA0827D2A4B9005B708B /* Debug */,
+				4574BA0927D2A4B9005B708B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		45D6A55B27CF4FCA0007911C /* Build configuration list for PBXProject "TawkUser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
