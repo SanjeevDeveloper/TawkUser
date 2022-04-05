@@ -386,38 +386,6 @@
             endingLineNumber = "50"
             landmarkName = "getDataFromAPI(path:completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C2D8F650-634A-4711-B8E5-C809CE71C0F4 - 7757d5b97a1d6af9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Bool) -&gt; () in TawkUser.APISniper.getDataFromAPI(path: Swift.String, completion: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "TawkUser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/air/Desktop/Learning/TawkUser/TawkUser/Service/APISniper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "505">
-               </Location>
-               <Location
-                  uuid = "C2D8F650-634A-4711-B8E5-C809CE71C0F4 - d94fa4f31d8f5fd4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #2 (Swift.Bool) -&gt; () in TawkUser.APISniper.getDataFromAPI(path: Swift.String, completion: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "TawkUser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/air/Desktop/Learning/TawkUser/TawkUser/Service/APISniper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "53">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
